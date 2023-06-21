@@ -1,0 +1,11 @@
+prefix=/data/tkxiong/grpc/release
+exec_prefix=/data/tkxiong/grpc/release
+libdir=/data/tkxiong/grpc/release/lib64
+includedir=/data/tkxiong/grpc/release/include
+
+Name: Protocol Buffers
+Description: Google's Data Interchange Format
+Version: 3.14.0.0
+Libs: -L${libdir} -lprotobuf-lite -lpthread
+Cflags: -I${includedir} -lpthread
+Conflicts: protobuf

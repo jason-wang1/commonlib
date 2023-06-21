@@ -1,0 +1,11 @@
+prefix=/root/tdkafka/librdkafka/./release
+libdir=/root/tdkafka/librdkafka/./release/lib
+includedir=/root/tdkafka/librdkafka/./release/include
+
+Name: librdkafka++
+Description: The Apache Kafka C/C++ library
+Version: 1.8.0
+Requires.private: rdkafka
+Cflags: -I${includedir}
+Libs: -L${libdir} -lrdkafka++
+Libs.private: -lm -ldl -lpthread -lrt

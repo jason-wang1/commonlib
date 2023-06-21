@@ -1,0 +1,10 @@
+prefix=/root/tdkafka/librdkafka/./release
+libdir=/root/tdkafka/librdkafka/./release/lib
+includedir=/root/tdkafka/librdkafka/./release/include
+
+Name: librdkafka-static
+Description: The Apache Kafka C/C++ library (static)
+Version: 1.8.0
+Requires: libsasl2
+Cflags: -I${includedir}
+Libs: -L${libdir} ${pc_sysrootdir}${libdir}/librdkafka-static.a -lm -ldl -lpthread -lrt
